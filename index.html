@@ -68,10 +68,11 @@ padding:20px;
 border-bottom:1px solid rgba(201,166,70,.3);
 }
 
-.logo img{
+/* LOGO REMOVIDA */
+/*.logo img{
 height:clamp(55px,8vw,70px);
 max-width:90%;
-}
+}*/
 
 /* MENU */
 nav{
@@ -134,6 +135,30 @@ transition:.3s;
 
 .btn:hover{transform:scale(1.05);}
 
+/* BOTÃO FLUTUANTE WHATSAPP */
+.whatsapp-float{
+position:fixed;
+width:60px;
+height:60px;
+bottom:20px;
+right:20px;
+background-color:var(--green);
+color:#fff;
+border-radius:50%;
+text-align:center;
+font-size:30px;
+z-index:10000;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 4px 8px rgba(0,0,0,0.3);
+transition:transform 0.3s;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.1);
+}
+
 /* SEÇÕES */
 section{
 padding:clamp(60px,9vw,90px) 8%;
@@ -173,10 +198,9 @@ border:1px solid rgba(201,166,70,.3);
 }
 
 .card img{
-width:100%;
-height:100%;
-min-height:220px;
-object-fit:cover;
+    width:100%;
+    height:220px; /* mesma altura do blog */
+    object-fit:cover;
 }
 
 .card-content{
@@ -253,13 +277,13 @@ font-size:14px;
 
 <!-- TOPO -->
 <div class="top-banner">
-<img src="advogada manaus.jpg">
+<img src="izolina ribeiro.png">
 </div>
 
-<!-- LOGO -->
+<!-- LOGO REMOVIDA -->
 <div class="header">
 <div class="logo">
-<img src="izolina ribeiro.jpg">
+<!-- Imagem removida -->
 </div>
 </div>
 
@@ -275,7 +299,7 @@ font-size:14px;
 <header class="hero">
 <div>
 <h1>Defesa Jurídica Estratégica<br>
-<span>Compromisso, Segurança, Excelência e Técnica</span></h1>
+<span>Compromisso, Técnica, Excelência e Segurança</span></h1>
 
 <p>
 Atendimento jurídico diferenciado, unindo expertise técnica, defesa especializada e cuidado individualizado para assegurar soluções seguras e eficientes.
@@ -304,7 +328,7 @@ Atuação jurídica estratégica e diferenciada, com foco central na Defesa Crim
 <div class="cards-grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?q=80&w=1200&auto=format&fit=crop">
+<img src="tribunal do júri.png">
 <div class="card-content">
 <h3><i class="fa-solid fa-scale-balanced"></i> Tribunal do Júri</h3>
 <p>Impronúncia e absolvição sumária.</p>
@@ -316,7 +340,7 @@ Atuação jurídica estratégica e diferenciada, com foco central na Defesa Crim
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1200&auto=format&fit=crop">
+<img src="maria da penha.png">
 <div class="card-content">
 <h3><i class="fa-solid fa-shield-heart"></i> Lei Maria da Penha</h3>
 <p>Defesa em medidas protetivas.</p>
@@ -328,7 +352,7 @@ Atuação jurídica estratégica e diferenciada, com foco central na Defesa Crim
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=1200&auto=format&fit=crop">
+<img src="tráfico de drogas.png">
 <div class="card-content">
 <h3><i class="fa-solid fa-gavel"></i> Tráfico de Drogas</h3>
 <p>Atuação em flagrante e audiência de custódia.</p>
@@ -341,7 +365,7 @@ Atuação jurídica estratégica e diferenciada, com foco central na Defesa Crim
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1528747045269-390fe33c19f3?q=80&w=1200&auto=format&fit=crop">
+<img src="bens apreendidos.png">
 <div class="card-content">
 <h3><i class="fa-solid fa-car"></i> Restituição de Veículos e Bens Apreendidos</h3>
 <p>Pedido de restituição ao juízo competente.</p>
@@ -352,7 +376,7 @@ Atuação jurídica estratégica e diferenciada, com foco central na Defesa Crim
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop">
+<img src="revisão criminal.png">
 <div class="card-content">
 <h3><i class="fa-solid fa-book-open"></i> Revisão Criminal</h3>
 <p>Identificação de nulidades processuais.</p>
@@ -367,18 +391,17 @@ Atuação jurídica estratégica e diferenciada, com foco central na Defesa Crim
 
 <!-- ADMINISTRATIVO -->
 <section>
-<h2 class="section-title">Atuação Técnica Complementar: Direito Administrativo</h2>
+<h2 class="section-title">Atuação Técnica Complementar</h2>
 
 <div class="cards-grid">
 <div class="card">
-<img src="https://images.unsplash.com/photo-1555375771-14b8e1e1c5b4?q=80&w=1200&auto=format&fit=crop">
+<img src="direito administrativo.png">
 <div class="card-content">
 <h3><i class="fa-solid fa-building-columns"></i> Direito Administrativo</h3>
 <p>Anulação de questões de concurso.</p>
 <p>Eliminação indevida.</p>
 <p>Mandado de segurança.</p>
-<p>Processo Administrativo Disciplinar (PAD).</p>
-<p>Defesa de servidores públicos.</p>
+<p>FGTS de servidores temporários em prefeituras.</p>
 </div>
 </div>
 </div>
@@ -386,17 +409,16 @@ Atuação jurídica estratégica e diferenciada, com foco central na Defesa Crim
 
 <!-- CIVIL -->
 <section>
-<h2 class="section-title">Atuação Correlata: Direito Civil e Direito do Consumidor</h2>
+<h2 class="section-title">Atuação Correlata</h2>
 
 <div class="cards-grid">
 <div class="card">
-<img src="https://images.unsplash.com/photo-1561414927-6d86591d0c4f?q=80&w=1200&auto=format&fit=crop">
+<img src="direito do consumidor.png">
 <div class="card-content">
 <h3><i class="fa-solid fa-handshake"></i> Direito Civil e do Consumidor</h3>
 <p>Negativação indevida.</p>
 <p>Cobranças abusivas.</p>
 <p>Responsabilidade civil.</p>
-<p>Conflitos contratuais.</p>
 </div>
 </div>
 </div>
@@ -407,32 +429,36 @@ Atuação jurídica estratégica e diferenciada, com foco central na Defesa Crim
 <h2 class="section-title">Conteúdos Jurídicos</h2>
 
 <div class="blog-card">
-<img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80">
+<img src="prisão em flagrante.jpg">
 <div class="blog-content">
-<h3>Pensão alimentícia em Manaus</h3>
-<p>Entenda quando é possível solicitar judicialmente.</p>
-<a href="#" class="btn-blog">Ler artigo →</a>
+<h3>O que fazer após a prisão em flagrante?</h3>
+<p> As primeiras 24 horas são determinantes para o rumo do caso.</p>
+<a href="prisaoemflagrante.html" class="btn-blog">Ler artigo →</a>
 </div>
 </div>
 </section>
 
 <!-- CTA -->
 <section id="contato" style="text-align:center;">
-<h2 class="section-title">Precisa de orientação jurídica?</h2>
+<h2 class="section-title">Precisa de orientação jurídica em Manaus?</h2>
 
 <div class="cta-img">
 <img src="izolina ribeiro advogada.jpg">
 </div>
 
 <a href="https://wa.me/5592985303122" class="btn" target="_blank">
-Falar no WhatsApp
+Entrar em contato
 </a>
 </section>
 
 <footer>
-© 2026 Izolina Ribeiro — Advogada Criminalista | Todos os direitos reservados
+© 2026 Izolina Ribeiro — Advogada Criminalista em Manaus</p>Todos os direitos reservados
 </footer>
 
-</body>
-</html>	
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<a href="https://wa.me/5592985303122" class="whatsapp-float" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
 
+</body>
+</html>
